@@ -17,6 +17,8 @@ body {
     -ms-text-size-adjust: 100%;
 
     font-family: 'Roboto', sans-serif;
+
+    color: hsl(0, 0%, 85%);
 }
 
 .header-container {
