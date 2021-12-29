@@ -1,5 +1,7 @@
 :root {
-    --spacer: 1rem;
+    --theme-color: #A0A0A0;
+    --theme-background: #181818;
+    --theme-accent: #B28442;
 }
 
 * {
@@ -11,26 +13,45 @@ body {
     font-family: var(--body-font);
     font-size: var(--body-font-size);
     line-height: var(--body-line-height);
-    color: var(--body-color);
-    background-color: hsl(200, 3%, 12%);
+
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
 
     font-family: 'Roboto', sans-serif;
 
-    color: hsl(0, 0%, 85%);
+    background-color: var(--theme-background);
+    color: var(--theme-color);
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 0;
+}
+
+h2 {
+    font-size: 1.25rem;
+    margin-top: 0;
+    line-height: 100%;
+}
+
+.footer {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
 }
 
 .header-container {
-    padding-top: var(--spacer);
-    padding-bottom: var(--spacer);
-    margin-bottom: var(--spacer-3);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-bottom: 3rem;
+}
 
-    color: hsl(0, 0%, 85%);
+.home {
+    color: var(--theme-accent);
 }
 
 .header {
     margin-bottom: 0;
+    color: var(--theme-accent);
 }
 
 .header a {
@@ -40,7 +61,9 @@ body {
 
 .header small {
     font-weight: 400;
-    opacity: 0.5;
+    /* opacity: 0.5; */
+    color: var(--theme-color);
+
 }
 
 .container {
@@ -55,4 +78,18 @@ body {
     float: right;
     line-height: 1.25rem;
     word-spacing: 1rem;
+}
+
+.overview {
+    text-align: center;
+    font-size: xx-large;
+    font-weight: 800;
+    color: var(--theme-accent);
+
+    line-height: 3rem;
+}
+
+.overview a {
+    color: var(--theme-color);
+    text-decoration: none;
 }
