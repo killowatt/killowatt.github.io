@@ -24,8 +24,22 @@ body {
 }
 
 img {
-    max-width: 100%;
+    width: 100%;
     max-height: auto;
+}
+
+h1 {
+    margin-bottom: .25rem;
+}
+
+h2 {
+    margin-bottom: 0.5rem;
+}
+
+video {
+    max-width: 100%;
+    margin: 1rem auto 1rem auto;
+    display: block;
 }
 
 iframe {
@@ -64,7 +78,7 @@ iframe {
 }
 
 .container {
-    max-width: 45rem;
+    max-width: 48rem;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
     margin-left: auto;
