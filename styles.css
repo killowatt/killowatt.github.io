@@ -127,3 +127,7 @@ iframe {
     color: var(--theme-color);
     text-decoration: none;
 }
+
+i {
+    background-color: url(github.svg);
+}
