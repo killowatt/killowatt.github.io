@@ -9,13 +9,16 @@
 
     <link rel="stylesheet" href="styles.css">
 
+    <link rel="icon" href="favicon.png" type="image/x-icon">
+
     <!-- Roboto Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 
     <!-- Logos -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
 </head>
 
 <body>
@@ -38,167 +41,215 @@
                 <a href="https://github.com/killowatt"><i class="fab fa-github"></i></a>
             </div>
 
+            <div id="skills">
+                <h1>Skills</h1>
+
+                <hr>
+
+                <table style="width: 100%;">
+                    <tr>
+                        <td><b>Languages</b></td>
+                        <td>C++, C#, Java, GLSL/HLSL, C, Python, HTML, CSS</td>
+                    </tr>
+
+                    <tr>
+                        <td><b>Engines/Frameworks</b></td>
+                        <td>Unity Engine, Unreal Engine, SDL2, XNA/MonoGame, OpenGL, PhysX</td>
+                    </tr>
+
+                    <tr>
+                        <td><b>Tools</b></td>
+                        <td>Git, Blender, Photoshop, Premiere Pro</td>
+                    </tr>
+                </table>
+            </div>
+
             <div id="projects">
                 <h1>Projects</h1>
 
                 <hr>
 
                 <!-- Kinema Section -->
-                <h2>Kinema <a href="https://github.com/killowatt/kinema" target="_blank"><i class="fab fa-github"></i></a>
-                </h2>
+                <div class="section">
+                    <h2>Kinema <a href="https://github.com/killowatt/kinema" target="_blank"><i
+                                class="fab fa-github"></i></a>
+                    </h2>
 
-                <p>
-                    Voxel game project utilizing a custom renderer and
-                    implementing the PhysX physics engine.
-                </p>
+                    <p>
+                        Voxel game project utilizing a custom renderer and
+                        implementing the PhysX physics engine.
+                    </p>
 
-                <div class="youtube-video">
-                    <iframe src="https://www.youtube.com/embed/2ZS2UyjkDto" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div class="youtube-video">
+                        <iframe src="https://www.youtube.com/embed/2ZS2UyjkDto" title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+
+                    <a class="img-link" href="images/kinema/overview.png" target="_blank">
+                        <img src="images/kinema/overview.png" title="Kinema">
+                    </a>
+
+                    <p>
+                        A "greedy" meshing algorithm is used to optimize triangle
+                        count, especially on large flat sections of voxel volumes.
+                    </p>
+
+                    <a class="img-link" href="images/kinema/wireframe.png" target="_blank">
+                        <img src="images/kinema/wireframe.png" title="Kinema Wireframe">
+                    </a>
                 </div>
 
-                <a href="images/kinema/overview.png" target="_blank">
-                    <img src="images/kinema/overview.png" title="Kinema">
-                </a>
-
-                <p>
-                    A "greedy" meshing algorithm is used to optimize triangle
-                    count, especially on large flat sections of voxel volumes.
-                </p>
-
-                <a href="images/kinema/wireframe.png" target="_blank">
-                    <img src="images/kinema/wireframe.png" title="Kinema Wireframe">
-                </a>
-                
 
                 <!-- Unreal Section -->
-                <h2>Unreal Engine</h2>
-                <h3>Dynamic Snow Sim</h3>
+                <div class="section">
+                    <h2>Unreal Engine</h2>
+                    <h3>Dynamic Snow Sim</h3>
 
-                <p>
-                    Dynamic snow simulation using a variable resolution depth
-                    camera and displacement mapping to create accurate snow
-                    deformation.
-                </p>
+                    <p>
+                        Dynamic snow simulation using a variable resolution depth
+                        camera and displacement mapping to create accurate snow
+                        deformation.
+                    </p>
 
-                <a href="images/snow_sim.png" target="_blank">
-                    <img src="images/snow_sim.png" title="Dynamic Snow Sim">
-                </a>
+                    <a class="img-link" href="images/snow_sim.png" target="_blank">
+                        <img src="images/snow_sim.png" title="Dynamic Snow Sim">
+                    </a>
 
-                <a href="images/snow_sim2.png" target="_blank">
-                    <img src="images/snow_sim2.png" title="Dynamic Snow Sim">
-                </a>
+                    <a class="img-link" href="images/snow_sim2.png" target="_blank">
+                        <img src="images/snow_sim2.png" title="Dynamic Snow Sim">
+                    </a>
+                </div>
 
-                <h3>User Interface Programming & Design</h3>
+                <div class="section">
+                    <h3>User Interface Programming & Design</h3>
 
-                <p>
-                    Programming and design of Unreal Motion Graphics (UMG) user
-                    interfaces. Multiple material effects in play with in-game
-                    performance in mind.
-                </p>
+                    <p>
+                        Programming and design of Unreal Motion Graphics (UMG) user
+                        interfaces. Multiple material effects in play with in-game
+                        performance in mind.
+                    </p>
 
-                <video controls loop>
-                    <source src="videos/unreal_ui.mp4" type="video/mp4">
-                </video>
+                    <video controls loop>
+                        <source src="videos/unreal_ui.mp4" type="video/mp4">
+                    </video>
 
-                <a href="images/unreal_ui.png" target="_blank">
-                    <img src="images/unreal_ui.png" title="HUD">
-                </a>
+                    <a class="img-link" href="images/unreal_ui.png" target="_blank">
+                        <img src="images/unreal_ui.png" title="HUD">
+                    </a>
+                </div>
 
-                <h3>Water Material</h3>
-                <video controls loop>
-                    <source src="videos/unreal_water.mp4" type="video/mp4">
-                </video>
+                <div class="section">
+                    <h3>Water Material</h3>
+                    <video controls loop>
+                        <source src="videos/unreal_water.mp4" type="video/mp4">
+                    </video>
+                </div>
 
                 <!-- StationSim Section -->
-                <h2>2D Dynamic Lighting & Shadows</h2>
+                <div class="section">
+                    <h2>2D Dynamic Lighting & Shadows</h2>
 
-                <p>
-                    2D lighting solution with realistic shadowing and object
-                    illumination.
-                </p>
+                    <p>
+                        2D lighting solution with realistic shadowing and object
+                        illumination.
+                    </p>
 
-                <video controls>
-                    <source src="videos/stationsim.mp4" type="video/mp4">
-                </video>
+                    <video controls>
+                        <source src="videos/stationsim.mp4" type="video/mp4">
+                    </video>
 
-                <a href="images/stationsim/final_image.png" target="_blank">
-                    <img src="images/stationsim/final_image.png" title="StationSim Frame">
-                </a>
+                    <a class="img-link" href="images/stationsim/final_image.png" target="_blank">
+                        <img src="images/stationsim/final_image.png" title="StationSim Frame">
+                    </a>
 
-                <p>
-                    Shadow map produced by the renderer in the above scene,
-                    along with the wireframe used to produce each shadow and
-                    their penumbras.
-                </p>
+                    <p>
+                        Shadow map produced by the renderer in the above scene,
+                        along with the wireframe used to produce each shadow and
+                        their penumbras. Shadow penumbras are calculated
+                        realistically, based off the set size of the light source.
+                    </p>
 
-                <a href="images/stationsim/shadow_map.png" target="_blank">
-                    <img src="images/stationsim/shadow_map.png" title="Shadow Map">
-                </a>
+                    <a class="img-link" href="images/stationsim/shadow_map.png" target="_blank">
+                        <img src="images/stationsim/shadow_map.png" title="Shadow Map">
+                    </a>
 
-                <a href="images/stationsim/shadow_wireframe.png" target="_blank">
-                    <img src="images/stationsim/shadow_wireframe.png" title="Shadow Wireframe">
-                </a>
+                    <a class="img-link" href="images/stationsim/shadow_wireframe.png" target="_blank">
+                        <img src="images/stationsim/shadow_wireframe.png" title="Shadow Wireframe">
+                    </a>
+                </div>
 
                 <!-- Conscript Section -->
-                <h2>Conscript</h2>
+                <div class="section">
+                    <h2>Conscript</h2>
 
-                <p>
-                    Level design project in the Unity engine, with a focus
-                    on world building and environmental storytelling as
-                    a walk-through experience.
-                </p>
+                    <p>
+                        Level design project in the Unity engine, with a focus
+                        on world building and environmental storytelling as
+                        a walk-through experience.
+                    </p>
 
-                <a href="images/conscript/coastline.jpg" target="_blank">
-                    <img src="images/conscript/coastline.jpg" title="Coastline">
-                </a>
+                    <a class="img-link" href="images/conscript/coastline.jpg" target="_blank">
+                        <img src="images/conscript/coastline.jpg" title="Coastline">
+                    </a>
 
-                <a href="images/conscript/above.jpg" target="_blank">
-                    <img src="images/conscript/above.jpg" title="Above">
-                </a>
+                    <a class="img-link" href="images/conscript/above.jpg" target="_blank">
+                        <img src="images/conscript/above.jpg" title="Above">
+                    </a>
+                </div>
 
 
                 <!-- Somatic Risk Section -->
-                <h2>Somatic Risk</h2>
-                <hr>
+                <div class="section">
+                    <h2>Somatic Risk</h2>
 
-                <p>
-                    One-week game development project with all custom assets,
-                    including code, models, textures, sound and music.
-                </p>
+                    <p>
+                        One-week game development project with all custom assets,
+                        including code, models, textures, sound and music.
+                    </p>
 
-                <div class="youtube-video">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Hpk1lmEx8so" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div class="youtube-video">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/Hpk1lmEx8so"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
                 </div>
-                
+
                 <!-- ShaderDude Section -->
-                <h2>ShaderDude</h2>
+                <div class="section">
+                    <h2>ShaderDude</h2>
 
-                <p>
-                    Development environment for producing live shader effects
-                    with user controls with rudimentary VR support. Winner of
-                    the 2018 University of Kentucky "CatHacks" 24 hour hackathon.
-                </p>
+                    <p>
+                        Development environment for producing live shader effects
+                        with user controls with rudimentary VR support. Winner of
+                        the 2018 University of Kentucky "CatHacks" 24 hour hackathon.
+                    </p>
 
-                <a href="images/shaderdude.png" target="_blank">
-                    <img src="images/shaderdude.png" title="ShaderDude">
-                </a>
+                    <a class="img-link" href="images/shaderdude.png" target="_blank">
+                        <img src="images/shaderdude.png" title="ShaderDude">
+                    </a>
+                </div>
 
                 <!-- Watchtower Section -->
-                <h2>Watchtower</h2>
+                <div class="section">
+                    <h2>Watchtower</h2>
 
-                <p>
-                    Voxel game prototype created in the Unreal Engine. Supports
-                    networked play and transmission of voxel game maps. Also
-                    utlizes greedy voxel meshing algorithm.
-                </p>
+                    <p>
+                        Voxel game prototype created in the Unreal Engine. Supports
+                        networked play and transmission of voxel game maps. Also
+                        utlizes greedy voxel meshing algorithm.
+                    </p>
 
-                <a href="images/watchtower/watchtower.png" target="_blank">
-                    <img src="images/watchtower/watchtower.png" title="Watchtower">
-                </a>
+                    <a class="img-link" href="images/watchtower/watchtower.png" target="_blank">
+                        <img src="images/watchtower/watchtower.png" title="Watchtower">
+                    </a>
 
-                <a href="images/watchtower/player.png" target="_blank">
-                    <img src="images/watchtower/player.png" title="Watchtower Player">
-                </a>
+                    <a class="img-link" href="images/watchtower/player.png" target="_blank">
+                        <img src="images/watchtower/player.png" title="Watchtower Player">
+                    </a>
+                </div>
 
             </div>
 
@@ -207,7 +258,7 @@
                 <hr>
 
                 <p>
-                    Feel free to send me an e-mail! You can reach me at 
+                    Feel free to send me an e-mail! You can reach me at
                     <a href="mailto:me@killo.dev">me@killo.dev</a>
                 </p>
             </div>
